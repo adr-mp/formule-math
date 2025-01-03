@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formules Mathématiques</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            background-image: url("math.webp");
+            background-attachment: fixed;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 20px; 
+        }
+        
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0; 
+        }
+          #logo{
+            width: 5%
+        }
+        .navbar-gradient {
+            background: linear-gradient(to right, #8aa214,  #071d9b); 
+        }        
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1%;
+            margin-right: 20%;
+            margin-top: 1%;
+            margin-left: 20%;
+        }
+
+        .formula {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+        }
+
+        .formula p {
+            margin: 8px 0;
+        }
+
+        .formula strong {
+            color: #2c3e50;
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        code {
+            background: #e8f4f8;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: #e74c3c;
+            font-family: monospace;
+        }
+
+        #menu {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 1%;
+        }
+
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+        }
+
+        #menu li {
+            margin: 5px 0;
+        }
+
+        #menu a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient">  
+        <img id="logo" src="aaqq.png" alt="">
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="statistique.html">Accueil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Fonctionnalités</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">À propos</a>
+                      </li>  
+                      <a class="navbar-brand" href="index.html">Quaternion+</a>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    
+
+    <div id="menu">
+        <h1>Formules Mathématiques</h1>
+        <ul>
+            <li><a href="#derivees">Dérivées</a></li>
+            <li><a href="#primitives">Primitives</a></li>
+            <li><a href="#series">Séries</a></li>
+            <li><a href="#probabilites">Probabilités</a></li>
+            <li><a href="#trigonometrie">Trigonométrie</a></li>
+            <li><a href="#geometrie">Géométrie</a></li>
+            <li><a href="#algebre">Algèbre</a></li>
+            <li><a href="#calcul-diff">Calcul Différentiel</a></li>
+            <li><a href="#integration">Intégration</a></li>
+            <li><a href="#matrices">Matrices</a></li>
+        </ul>
+    </div>
+
+    <div id="derivees" class="section">
+        <h2>Dérivées</h2>
+        <div class="formula">
+            <p><strong>Dérivée de sin(x) :</strong> <code>f'(x) = cos(x)</code></p>
+            <p><strong>Dérivée de cos(x) :</strong> <code>f'(x) = -sin(x)</code></p>
+            <p><strong>Dérivée de e^x :</strong> <code>f'(x) = e^x</code></p>
+            <p><strong>Dérivée de ln(x) :</strong> <code>f'(x) = 1/x</code></p>
+            <p><strong>Dérivée de tan(x) :</strong> <code>f'(x) = 1/cos²(x)</code></p>
+            <p><strong>Dérivée de x^n :</strong> <code>f'(x) = nx^(n-1)</code></p>
+        </div>
+    </div>
+
+    <div id="primitives" class="section">
+        <h2>Primitives</h2>
+        <div class="formula">
+            <p><strong>Primitive de cos(x) :</strong> <code>F(x) = sin(x) + C</code></p>
+            <p><strong>Primitive de sin(x) :</strong> <code>F(x) = -cos(x) + C</code></p>
+            <p><strong>Primitive de 1/x :</strong> <code>F(x) = ln|x| + C</code></p>
+            <p><strong>Primitive de e^x :</strong> <code>F(x) = e^x + C</code></p>
+            <p><strong>Primitive de x^n :</strong> <code>F(x) = (x^(n+1))/(n+1) + C</code></p>
+        </div>
+    </div>
+
+    <div id="series" class="section">
+        <h2>Séries</h2>
+        <div class="formula">
+            <p><strong>Série géométrique :</strong> <code>Σ r^n = 1/(1-r), |r| < 1</code></p>
+            <p><strong>Série de Taylor e^x :</strong> <code>e^x = 1 + x + x²/2! + x³/3! + ...</code></p>
+            <p><strong>Suite de Fibonacci :</strong> <code>Fₙ = Fₙ₋₁ + Fₙ₋₂</code></p>
+            <p><strong>Série harmonique :</strong> <code>Σ 1/n = 1 + 1/2 + 1/3 + ...</code></p>
+            <p><strong>Série de Maclaurin sin(x) :</strong> <code>sin(x) = x - x³/3! + x⁵/5! - ...</code></p>
+        </div>
+    </div>
+
+    <div id="probabilites" class="section">
+        <h2>Probabilités et Statistiques</h2>
+        <div class="formula">
+            <p><strong>Espérance :</strong> <code>E[X] = Σ (x * P(x))</code></p>
+            <p><strong>Variance :</strong> <code>Var(X) = E[X²] - (E[X])²</code></p>
+            <p><strong>Loi normale :</strong> <code>f(x) = (1/σ√(2π)) * e^(-(x-μ)²/2σ²)</code></p>
+            <p><strong>Covariance :</strong> <code>Cov(X,Y) = E[(X-E[X])(Y-E[Y])]</code></p>
+            <p><strong>Coefficient corrélation :</strong> <code>ρ = Cov(X,Y)/(σ_X * σ_Y)</code></p>
+            <p><strong>Loi binomiale :</strong> <code>P(X=k) = C(n,k) * p^k * (1-p)^(n-k)</code></p>
+        </div>
+    </div>
+
+    <div id="trigonometrie" class="section">
+        <h2>Identités Trigonométriques</h2>
+        <div class="formula">
+            <p><strong>Pythagore :</strong> <code>sin²(x) + cos²(x) = 1</code></p>
+            <p><strong>Double angle sin :</strong> <code>sin(2x) = 2sin(x)cos(x)</code></p>
+            <p><strong>Double angle cos :</strong> <code>cos(2x) = cos²(x) - sin²(x)</code></p>
+            <p><strong>Addition sin :</strong> <code>sin(A+B) = sin(A)cos(B) + cos(A)sin(B)</code></p>
+            <p><strong>Addition cos :</strong> <code>cos(A+B) = cos(A)cos(B) - sin(A)sin(B)</code></p>
+            <p><strong>Tangente :</strong> <code>tan(x) = sin(x)/cos(x)</code></p>
+        </div>
+    </div>
+
+    <div id="geometrie" class="section">
+        <h2>Géométrie</h2>
+        <div class="formula">
+            <p><strong>Aire cercle :</strong> <code>A = πr²</code></p>
+            <p><strong>Volume sphère :</strong> <code>V = (4/3)πr³</code></p>
+            <p><strong>Surface sphère :</strong> <code>S = 4πr²</code></p>
+            <p><strong>Volume cylindre :</strong> <code>V = πr²h</code></p>
+            <p><strong>Volume cône :</strong> <code>V = (1/3)πr²h</code></p>
+            <p><strong>Théorème de Pythagore :</strong> <code>a² + b² = c²</code></p>
+        </div>
+    </div>
+
+    <div id="algebre" class="section">
+        <h2>Algèbre</h2>
+        <div class="formula">
+            <p><strong>Équation quadratique :</strong> <code>x = (-b ± √(b² - 4ac))/(2a)</code></p>
+            <p><strong>Binôme de Newton :</strong> <code>(x + y)^n = Σ C(n,k)x^(n-k)y^k</code></p>
+            <p><strong>Identité remarquable 1 :</strong> <code>(a + b)² = a² + 2ab + b²</code></p>
+            <p><strong>Identité remarquable 2 :</strong> <code>(a - b)² = a² - 2ab + b²</code></p>
+            <p><strong>Identité remarquable 3 :</strong> <code>(a + b)(a - b) = a² - b²</code></p>
+        </div>
+    </div>
+
+    <div id="calcul-diff" class="section">
+        <h2>Calcul Différentiel</h2>
+        <div class="formula">
+            <p><strong>Règle du produit :</strong> <code>(uv)' = u'v + uv'</code></p>
+            <p><strong>Règle du quotient :</strong> <code>(u/v)' = (u'v - uv')/v²</code></p>
+            <p><strong>Règle de la chaîne :</strong> <code>(f∘g)' = (f'∘g) * g'</code></p>
+            <p><strong>Dérivée seconde :</strong> <code>f''(x) = (f'(x))'</code></p>
+            <p><strong>Dérivée partielle :</strong> <code>∂f/∂x = lim(h→0) [f(x+h,y) - f(x,y)]/h</code></p>
+        </div>
+    </div>
+
+    <div id="integration" class="section">
+        <h2>Intégration</h2>
+        <div class="formula">
+            <p><strong>Intégrale définie :</strong> <code>∫[a→b] f(x)dx = F(b) - F(a)</code></p>
+            <p><strong>Intégration par parties :</strong> <code>∫udv = uv - ∫vdu</code></p>
+            <p><strong>Changement de variable :</strong> <code>∫f(x)dx = ∫f(g(t))g'(t)dt</code></p>
+            <p><strong>Intégrale double :</strong> <code>∫∫D f(x,y)dxdy</code></p>
+            <p><strong>Théorème de Green :</strong> <code>∮C (Pdx + Qdy) = ∫∫D (∂Q/∂x - ∂P/∂y)dxdy</code></p>
+        </div>
+    </div>
+
+    <div id="matrices" class="section">
+        <h2>Matrices</h2>
+        <div class="formula">
+            <p><strong>Déterminant 2x2 :</strong> <code>|A| = ad - bc</code></p>
+            <p><strong>Matrice inverse 2x2 :</strong> <code>A⁻¹ = 1/|A| * [[d,-b],[-c,a]]</code></p>
+            <p><strong>Trace :</strong> <code>tr(A) = a₁₁ + a₂₂ + ... + aₙₙ</code></p>
+            <p><strong>Produit matriciel :</strong> <code>(AB)ᵢⱼ = Σₖ aᵢₖbₖⱼ</code></p>
+            <p><strong>Transposée :</strong> <code>(Aᵀ)ᵢⱼ = aⱼᵢ</code></p>
+        </div>
+    </div>
+
+</body>
+</html>
